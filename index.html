@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígonos</title>
+
+    <link rel="stylesheet" href="./css/poligonos.css" type="text/css">
+</head>
+
+<body onload="inicia_linha()">
+    <div class="box"> Digite o número de lados do polígono: (entre 3 e 8)
+        <br />
+        <input type="number" id="lados" max="8" min="3"/>
+        <input class="btnConfirmar" type="button" onclick="desenha_poligono()" value="Confirmar"/>
+        <p id="erro"></p>
+    </div>
+    <input class="botaoModo" type="button" onclick="inicia_linha()" value="Voltar ao modo linha"/>
+    <br />
+    <div class="canvasContainer center">
+        <canvas class="center" id="canvas">
+            <p>Seu browser não possui suporte ao canvas!</p>
+        </canvas>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
